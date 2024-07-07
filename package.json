@@ -1,0 +1,32 @@
+{
+  "name": "luces-de-catamarca",
+  "version": "1.0.0",
+  "description": "Sitio web de un fotografo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server src/ & npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "minify": "npx html-minifier --input-dir ./src --output-dir ./dist  --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true",
+    "imagemin": "node ./imagemin.mjs",
+    "build": "npm run minify & npm run imagemin",
+    "live": "live-server dist/"
+  },
+  "keywords": [
+    "catamarca",
+    "argentina",
+    "fotografia",
+    "fotografo"
+  ],
+  "author": "Matias D. Sanchez R.",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "imagemin": "^9.0.0",
+    "imagemin-jpeg-recompress": "^7.1.0",
+    "imagemin-jpegoptim": "^8.0.0",
+    "imagemin-pngquant": "^10.0.0"
+  }
+}
