@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "live-server src/ & npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "minify": "npx html-minifier --input-dir ./src --output-dir ./dist  --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true",
+    "minify": "npx html-minifier --input-dir ./src --output-dir ./dist  --collapse-whitespace --remove-tag-whitespace --minify-css true",
     "imagemin": "node ./imagemin.mjs",
     "build": "npm run minify & npm run imagemin",
     "live": "live-server dist/"
