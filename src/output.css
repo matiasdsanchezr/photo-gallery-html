@@ -721,7 +721,7 @@ video {
 
 @keyframes zoom {
   0%, 100% {
-    transform: scale(1.1);
+    transform: scale(2);
   }
 
   50% {
@@ -730,7 +730,7 @@ video {
 }
 
 .animate-zoom {
-  animation: zoom 5s ease-in-out infinite;
+  animation: zoom 10s ease-in-out infinite;
 }
 
 .cursor-pointer {

@@ -8,7 +8,7 @@ module.exports = {
       },
       keyframes: {
         zoom: {
-          "0%, 100%": { transform: "scale(1.1)" },
+          "0%, 100%": { transform: "scale(2)" },
           "50%": { transform: "scale(1);" },
         },
         translate: {
@@ -17,7 +17,7 @@ module.exports = {
         },
       },
       animation: {
-        zoom: "zoom 5s ease-in-out infinite",
+        zoom: "zoom 10s ease-in-out infinite",
         translate: "translate 15s ease-in-out infinite",
       },
     },
